@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    
+    <title>DUni Cronômetro</title>
+</head>
+
+<body>
+    <div class="countdown">
+        <div id="clock" class="row">
+            <div class="timer">
+                <div class="middle"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row" id="btns">
+                <button class="btn btn-default btn-lg" id="start">Iniciar</button>
+                <button class="btn btn-default btn-lg" id="stop">Parar</button>
+                <button class="btn btn-default btn-lg" id="clear">Limpar</button>
+            </div>
+        </div>
+
+        <div class="row hide">
+                <div class="col-md-12">
+                    <div class="row">
+                        <p>Tempo de jogo
+                            <p>
+                    </div>
+                    <div class="row counter">
+                        <div class="col-md-4">
+                            <button class="btn btn-default" id="sessDec">-</button>
+                        </div>
+                        <div class="col-md-2">
+                            <div id="session"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-default" id="sessInc">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+    <script type="text/javascript" src="countdown.js"></script>
+</body>
+
+</html>
